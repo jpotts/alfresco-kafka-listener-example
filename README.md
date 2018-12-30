@@ -13,3 +13,5 @@ checkout the Alfresco Kafka project and then run it using the embedded tomcat.
 
 Switch to the root of the project directory then run `mvn spring-boot:run`.
 
+The default log level is set to DEBUG. When the listener processes an Alfresco Kafka event, a message is written to the
+log that includes the event type and node ID.
