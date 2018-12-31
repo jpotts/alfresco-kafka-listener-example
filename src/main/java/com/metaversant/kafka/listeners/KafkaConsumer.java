@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class KafkaConsumer {
     private static final Logger logger = LogManager.getLogger(KafkaConsumer.class);
 
-    @KafkaListener(topics="alfresco-node-events", group = "group_json", containerFactory = "nodeEventKafkaListenerFactory")
+    @KafkaListener(topics="${kafka.topic}", group = "${kafka.group}", containerFactory = "nodeEventKafkaListenerFactory")
     public void consumeJson(NodeEvent nodeEvent) {
         try {
             logger.debug("Inside consumeJson");
