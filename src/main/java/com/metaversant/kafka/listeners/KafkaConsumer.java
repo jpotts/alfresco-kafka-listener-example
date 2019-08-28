@@ -15,11 +15,11 @@ public class KafkaConsumer {
         try {
             logger.debug("Inside consumeJson");
 
-            if (nodeEvent.getContentType().equals("F:cm:systemfolder") ||
+            if (nodeEvent.getContentType() != null && (nodeEvent.getContentType().equals("F:cm:systemfolder") ||
                     nodeEvent.getContentType().equals("F:bpm:package") ||
                     nodeEvent.getContentType().equals("I:act:actionparameter") ||
                     nodeEvent.getContentType().equals("I:act:action") ||
-                    nodeEvent.getContentType().equals("D:cm:thumbnail")) {
+                    nodeEvent.getContentType().equals("D:cm:thumbnail"))) {
                 return;
             }
 

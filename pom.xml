@@ -55,8 +55,8 @@
         <!-- Alfresco Kafka -->
         <dependency>
             <groupId>com.metaversant</groupId>
-            <artifactId>alfresco-kafka</artifactId>
-            <version>0.0.2-SNAPSHOT</version>
+            <artifactId>alfresco-kafka-model</artifactId>
+            <version>0.0.3-SNAPSHOT</version>
         </dependency>
 
         <!-- Lombok -->

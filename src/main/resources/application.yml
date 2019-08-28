@@ -1,5 +1,5 @@
 server.port: 8000
 
-kafka.servers: 127.0.0.1:9092
+kafka.servers: localhost:9092
 kafka.topic: alfresco-node-events
 kafka.group: group1
